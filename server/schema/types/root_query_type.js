@@ -8,6 +8,7 @@ const RootQueryType = new GraphQLObjectType({
     currentUser: {
       type: UserType,
       resolve(parentValue, args, req) {
+        console.log(req);
         return req.user;
       }
     }
