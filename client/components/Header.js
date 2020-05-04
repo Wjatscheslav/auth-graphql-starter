@@ -21,12 +21,12 @@ class Header extends Component{
     }
 
     renderButtons() {
-        const { loading, user } = this.props.data;
+        const { loading, currentUser } = this.props.data;
 
         if (loading) {
             return <div />;
         }
-        if (user) {
+        if (currentUser) {
             return (
                 <li>
                     <a onClick={this.onLogoutClick.bind(this)}>Logout</a>
