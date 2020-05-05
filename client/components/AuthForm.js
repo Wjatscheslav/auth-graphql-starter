@@ -25,6 +25,7 @@ class AuthForm extends Component {
                     </div>
                     <div className='input-field'>
                         <input
+                            type='password'
                             placeholder='Password'
                             value={this.state.password}
                             onChange={event => this.setState({ password: event.target.value })} />
